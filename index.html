@@ -8,17 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <title>Codo a Codo TP</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!--HEADER-->
+    <header class="container-fluid">
+      <!--BARRA DE NAVEGACION-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column justify-content-between">
             <div class="container-fluid">
                 <span class="navbar-bgrand" href="#">
                     <img src="images/codoacodo.png" alt="Logo" width="80" height="50" class="d-inline-block align-text-top">
                     Conf Bs As
-                  </span>
+                </span>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,41 +44,90 @@
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
+        <!--CARROUSEL-->
         <div>
-            <h1>Conf Bs As</h1>
-            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/ba1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+              <h1>Conf Bs As</h1>
+              <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            </div>
+              <div class="carousel-item">
+                <img src="images/ba2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ba3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
     </header>
-    <main class="container-fluid justify-content-center">
-      <p>conoce a los</p>
-      <h2>oradores</h2>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-4">
-            <img src="images/steve.jpg" alt="Steve Jobs">
-            <h4>Steve Jobs</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ligula et sem pellentesque, ut imperdiet lorem pretium. Nullam commodo ante vitae vestibulum viverra. Maecenas commodo porttitor elit, in lobortis.</p>
-          </div>
-          <div class="col-lg-4">
-            <img src="images/bill.jpg" alt="Bill Gates">
-            <h4>Bill Gates</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ligula et sem pellentesque, ut imperdiet lorem pretium. Nullam commodo ante vitae vestibulum viverra. Maecenas commodo porttitor elit, in lobortis.</p>
-          </div>
-          <div class="col-lg-4">
-            <img src="images/ada.jpeg" alt="Ada Lovelace">
-            <h4>Ada Lovelace</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ligula et sem pellentesque, ut imperdiet lorem pretium. Nullam commodo ante vitae vestibulum viverra. Maecenas commodo porttitor elit, in lobortis.</p>
-          </div>
-        </div>  
-      </div>
-    </main>
     <section>
-      <img src="images/ba3.jpg" alt="Obelisco Buenos Aires">
-      <h3>Bs As - Octubre</h3>
-      <p>La ciudad de Buenos Aires es la capital federal de la República de Argentina. Rodeada por el Río de la Plata y la provincia de Buenos Aires, conforma junto a 24 partidos cercanos de la provincia el Gran Buenos Aires, una megaciudad donde habitan aproximadamente 14 millones de personas y donde se ubica el polo industrial económico mas importante del país.</p>
+      <div class="container-fluid">
+        <p>conoce a los</p>
+        <h2>oradores</h2>
+        <div class="container d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="images/steve.jpg" class="card-img-top" alt="Steve Jobs">
+            <div class="card-body">
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ligula et sem
+                pellentesque, ut imperdiet lorem pretium. Nullam commodo ante vitae vestibulum viverra. Maecenas commodo
+                porttitor elit, in lobortis.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/bill.jpg" class="card-img-top" alt="Bill Gates">
+            <div class="card-body">
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ligula et sem
+                pellentesque, ut imperdiet lorem pretium. Nullam commodo ante vitae vestibulum viverra. Maecenas commodo
+                porttitor elit, in lobortis.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="images/ada.jpeg"" class=" card-img-top" alt="Ada Lovelace">
+            <div class="card-body">
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ligula et sem
+                pellentesque, ut imperdiet lorem pretium. Nullam commodo ante vitae vestibulum viverra. Maecenas commodo
+                porttitor elit, in lobortis.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
     </section>
-    <section>
+    <section class="container-fluid">
+      <div class="card mb-3 w-100" >
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="images/ba3.jpg" class="img-fluid rounded-start" alt="Obelisco Bs As">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Bs As - Octubre</h5>
+              <p class="card-text">La ciudad de Buenos Aires es la capital federal de la República de Argentina. Rodeada por el Río de la Plata y la provincia de Buenos Aires, conforma junto a 24 partidos cercanos de la provincia el Gran Buenos Aires, una megaciudad donde habitan aproximadamente 14 millones de personas y donde se ubica el polo industrial económico mas importante del país.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid ">
       <p>conviertete en un</p>
       <h2>orador</h2>
       <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
