@@ -11,3 +11,33 @@ html{
     color: black;
     scroll-behavior: smooth;
 }
+
+nav{
+    background-color: rgb(69, 69, 73);
+}
+
+nav img{
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner{
+    background-image: url("images/ba1.jpg");
+    height: 100vh;
+    background-size: cover; 
+}
+
+.imagen1{
+    display:flex;
+    flex-direction: column;
+}
+
+.carousel-caption{
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
