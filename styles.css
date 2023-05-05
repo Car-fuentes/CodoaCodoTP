@@ -53,7 +53,6 @@ nav ul{
 }
 /*Formulario*/
 
-<<<<<<< HEAD
 /*Formulario*/
 .punteado{
     text-decoration: underline;
@@ -67,13 +66,4 @@ nav ul{
 .blue{
     background: rgb(16,58,94);
     background: linear-gradient(90deg, rgba(16,58,94,1) 17%, rgba(31,85,133,1) 60%, rgba(58,108,152,1) 100%);
-=======
-.boton-verde{
-    background-color: rgb(124, 190, 58);
-}
-/* Footer */
-.blue{
-    background: rgb(9,47,79);
-    background: linear-gradient(90deg, rgba(9,47,79,1) 17%, rgba(16,58,94,1) 60%, rgba(31,85,133,1) 100%);
->>>>>>> detalles
 }
