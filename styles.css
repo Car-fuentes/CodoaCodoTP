@@ -52,7 +52,17 @@ nav ul{
     height: 120px;
 }
 
+/*Formulario*/
+.punteado{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.boton-form{
+    background-color: rgb(119, 201, 37);
+}
 /* Footer */
 .blue{
-    background-color: rgb(36, 64, 107);
+    background: rgb(16,58,94);
+    background: linear-gradient(90deg, rgba(16,58,94,1) 17%, rgba(31,85,133,1) 60%, rgba(58,108,152,1) 100%);
 }
