@@ -51,8 +51,13 @@ nav ul{
 #floatingTextarea{
     height: 120px;
 }
+/*Formulario*/
 
+.boton-verde{
+    background-color: rgb(124, 190, 58);
+}
 /* Footer */
 .blue{
-    background-color: rgb(36, 64, 107);
+    background: rgb(9,47,79);
+    background: linear-gradient(90deg, rgba(9,47,79,1) 17%, rgba(16,58,94,1) 60%, rgba(31,85,133,1) 100%);
 }
