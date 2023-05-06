@@ -27,7 +27,11 @@ nav ul{
 }
 
 .compra{
-    color:rgb(119, 201, 37);
+    color:rgb(37, 201, 37);
+}
+
+.carousel-item{
+max-height: 650px;
 }
 
 .imagen1{
@@ -39,17 +43,14 @@ nav ul{
     filter: brightness(0.5);
 }
 
-.carousel-caption{
-    justify-content: flex-end;
-    align-items: flex-end;
-    
-}
 
 /* Main */
 
 /* Card */
 .tarjeta .card{
     background-color: rgb(69, 69, 73);
+    border-radius: 0%;
+    width: 100% !important;
 }
 
 #floatingTextarea{
@@ -63,11 +64,14 @@ nav ul{
     text-decoration-style: dotted;
 }
 
+.formulario{
+    max-width: 700px;
+}
 .boton-form{
     background-color: rgb(119, 201, 37);
 }
 /* Footer */
 .blue{
-    background: rgb(16,58,94);
-    background: linear-gradient(90deg, rgba(16,58,94,1) 17%, rgba(31,85,133,1) 60%, rgba(58,108,152,1) 100%);
+    background: rgb(10,42,69);
+    background: linear-gradient(90deg, rgba(10,42,69,1) 10%, rgba(34,75,110,1) 90%);
 }
