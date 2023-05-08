@@ -21,9 +21,7 @@
 <body>
     <!--HEADER-->
     <header>
-        <div class="container-fluid"></div>
-        <!--BARRA DE NAVEGACION-->
-        <nav class="navbar navbar-expand-md sticky-top cabecera py-1">
+        <nav class="navbar navbar-expand-lg cabecera">
             <div class="container-fluid">
                 <span class="navbar-brand text-white ms-5" href="Logo Codo a codo ">
                     <img src="images/codoacodo1.png" alt="Logo" width="80" height="50"
@@ -31,32 +29,24 @@
                     Conf Bs As
                 </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-5">
-                        <li class="nav-item">
-                            <a class="nav-link active fw-semibold text-white" aria-current="page" href="#">La
-                                Conferencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold text-white-50" href="#oradores">Los oradores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold text-white-50" href="#">El lugar y la fecha</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold text-white-50" href="#orador">Conviértete en orador</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link fw-semibold compra">Comprar tickets</a>
-                        </li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <div class="navbar-nav ms-auto ">
+                        <a class="nav-link active fw-semibold text-white" aria-current="page" href="#">La
+                            Conferencia</a>
+                        <a class="nav-link fw-semibold text-white-50" href="#oradores">Los oradores</a>
+                        <a class="nav-link fw-semibold text-white-50" href="#">El lugar y la fecha</a>
+                        <a class="nav-link fw-semibold text-white-50" href="#orador">Conviértete en orador</a>
+                        <a class="nav-link fw-semibold compra">Comprar tickets</a>
+                    </div>
                 </div>
             </div>
         </nav>
+
         <!-- CARROUSEL -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -88,8 +78,7 @@
                         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
                             conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
                             conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer
-                            nivel que
-                            tenemos para ti. Te esperamos!</p>
+                            nivel que tenemos para ti. Te esperamos!</p>
                         <a href="#" type="button" class="btn btn-outline-light">Quiero ser orador</a>
                         <a href="#" type="button" class="btn btn-success">Comprar tickets</a>
                     </div>
@@ -101,14 +90,12 @@
                         <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
                             conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
                             conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer
-                            nivel que
-                            tenemos para ti. Te esperamos!</p>
+                            nivel que tenemos para ti. Te esperamos!</p>
                         <a href="#" type="button" class="btn btn-outline-light">Quiero ser orador</a>
                         <a href="#" type="button" class="btn btn-success">Comprar tickets</a>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </header>
     <!--ORADORES-->
@@ -117,8 +104,8 @@
             <p class="my-0 text-uppercase ">conoce a los</p>
             <p class="text-uppercase fs-2 fw-semibold">oradores</p>
             <div class="container d-flex justify-content-center">
-                <div class="row">
-                    <div class="col-lg-4 mb-3 ">
+                <div class="row tarjetas">
+                    <div class="col-md-6 col-lg-4 mb-3 ">
                         <div class="card text-start" style="width: 18rem;">
                             <img src="images/steve.jpg" class="card-img-top" alt="Steve Jobs">
                             <div class="card-body">
@@ -126,12 +113,13 @@
                                 <span class="badge bg-primary">React</span>
                                 <h5 class="card-title fs-4">Steve Jobs</h5>
                                 <p class="card-text">Diseñador industrial, magnate empresarial, propietario de medios e
-                                    inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple​ y máximo accionista
+                                    inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple​ y máximo
+                                    accionista
                                     individual de The Walt Disney Company.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3">
                         <div class="card text-start" style="width: 18rem;">
                             <img src="images/bill1.jpg" class="card-img-top" alt="Bill Gates">
                             <div class="card-body">
@@ -139,12 +127,13 @@
                                 <span class="badge bg-primary">React</span>
                                 <h5 class="card-title fs-4">Bill Gates</h5>
                                 <p class="card-text">William Henry Gates III, magnate empresarial, desarrollador de
-                                    software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto
+                                    software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft,
+                                    junto con su difunto
                                     amigo de la infancia Paul Allen.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3">
                         <div class="card text-start" style="width: 18rem;">
                             <img src="images/ada.jpeg"" class=" card-img-top" alt="Ada Lovelace">
                             <div class="card-body">
@@ -152,7 +141,8 @@
                                 <span class="badge bg-danger">Startups</span>
                                 <h5 class="card-title fs-4">Ada Lovelace</h5>
                                 <p class="card-text">Augusta Ada King, condesa de Lovelace, matemática y escritora
-                                    británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de
+                                    británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de
+                                    uso general de
                                     Charles Babbage, la denominada máquina analítica.</p>
                             </div>
                         </div>
@@ -164,20 +154,25 @@
     <!--TARJETA CENTRAL-->
     <section>
         <div class="container-fluid tarjeta">
-        <div class="card mb-2 w-100">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="images/laboca.jpg" class="img-fluid rounded-start" alt="Obelisco Bs As">
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Bs As - Octubre</h5>
-                        <p class="card-text text-white">La ciudad de Buenos Aires es la capital federal de la República
-                            de Argentina. Rodeada por el Río de la Plata y la provincia de Buenos Aires, conforma junto a
-                            24 partidos cercanos de la provincia el Gran Buenos Aires, una megaciudad donde habitan aproximadamente
-                            14 millones de personas y donde se ubica el polo industrial económico mas importante del país.</p>
-                        <p class="card-text">
-                            <a href="#" type="button" class="btn btn-outline-light">Conocé mas</a>
+            <div class="card mb-2 w-100">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="images/laboca.jpg" class="img-fluid rounded-start" alt="Obelisco Bs As">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Bs As - Octubre</h5>
+                            <p class="card-text text-white">La ciudad de Buenos Aires es la capital federal de la
+                                República
+                                de Argentina. Rodeada por el Río de la Plata y la provincia de Buenos Aires, conforma
+                                junto a
+                                24 partidos cercanos de la provincia el Gran Buenos Aires, una megaciudad donde habitan
+                                aproximadamente
+                                14 millones de personas y donde se ubica el polo industrial económico mas importante del
+                                país.</p>
+                            <p class="card-text">
+                                <a href="#" type="button" class="btn btn-outline-light">Conocé mas</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -188,7 +183,7 @@
         <div class="container text-center">
             <p class="text-uppercase my-0">conviertete en un</p>
             <p class="text-uppercase fs-2 fw-semibold">orador</p>
-            <p>Anótate como orador para dar una <span class="punteado">charla ignite.</span> 
+            <p>Anótate como orador para dar una <span class="punteado">charla ignite.</span>
                 Cuéntanos de que quieres hablar!
             </p>
             <div class="container text-start formulario pt-0">
@@ -214,33 +209,34 @@
                     </div>
                 </form>
             </div>
+        </div>
     </section>
     <!--BARRA FINAL-->
     <footer>
         <div class="container-fluid">
-        <ul class="nav justify-content-center blue p-3 w-100">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contáctanos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Prensa</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Conferencias</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Términos y condiciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Privacidad</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Estudiantes</a>
-            </li>
-        </ul>
+            <ul class="nav justify-content-center blue p-3 w-100">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Estudiantes</a>
+                </li>
+            </ul>
         </div>
     </footer>
     <!--SCRIPT-->

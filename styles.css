@@ -13,6 +13,7 @@ html{
 }
 
 /* Header */
+
 .navbar.cabecera{
     background-color: rgb(69, 69, 73);
 }
@@ -21,9 +22,10 @@ nav img{
     width: 50%;
 }
 
-nav ul{
+nav .opciones{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .compra{
@@ -43,10 +45,8 @@ max-height: 650px;
     filter: brightness(0.5);
 }
 
-
-/* Main */
-
 /* Card */
+
 .tarjeta .card{
     background-color: rgb(69, 69, 73);
     border-radius: 0%;
@@ -56,9 +56,9 @@ max-height: 650px;
 #floatingTextarea{
     height: 120px;
 }
-/*Formulario*/
 
 /*Formulario*/
+
 .punteado{
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -71,7 +71,16 @@ max-height: 650px;
     background-color: rgb(119, 201, 37);
 }
 /* Footer */
+
 .blue{
     background: rgb(10,42,69);
     background: linear-gradient(90deg, rgba(10,42,69,1) 10%, rgba(34,75,110,1) 90%);
+}
+
+@media screen and (max-width: 767px){
+    .tarjetas{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
 }
