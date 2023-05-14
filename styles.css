@@ -45,7 +45,7 @@ max-height: 650px;
     filter: brightness(0.5);
 }
 
-/* Card */
+/* Tarjeta central */
 
 .tarjeta .card{
     background-color: rgb(69, 69, 73);
@@ -70,7 +70,7 @@ max-height: 650px;
 .boton-form{
     background-color: rgb(119, 201, 37);
 }
-/* Footer */
+/* Barra inferior */
 
 .blue{
     background: rgb(10,42,69);
