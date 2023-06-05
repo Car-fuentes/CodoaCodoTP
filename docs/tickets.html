@@ -56,64 +56,70 @@
                 <div class="col-md-6 col-lg-7 col-xl-6">
                     <h6 class="text-uppercase text-center">venta</h6>
                     <h1 class="text-uppercase text-center">valor del ticket $200</h1>
-                    <form>
+                    <form id="formulario" name="formulario">
                         <div class="row gx-2">
                             <div class="col-md mb-2">
                                 <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Nombre"
-                                    aria-label="Nombre" />
+                                    aria-label="Nombre" required pattern="^[A-Za-z<ÑñÁáÉéÍíÓóÚú\S]+$" minlength="2"
+                                    maxlength="15"/>
                                 <p class="error" id="errorNombre"></p>
                             </div>
                             <div class="col-md mb-2">
                                 <input id="apellido" type="text" class="form-control" placeholder="Apellido"
-                                    aria-label="Apellido" />
+                                    aria-label="Apellido" required pattern="^[A-Za-z<ÑñÁáÉéÍíÓóÚú\S]+$" minlength="2"
+                                    maxlength="15"/>
                                 <p class="error" id="errorApellido"></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col mb-2">
-                                <input id="email" type="email" class="form-control" placeholder="Correo"
-                                    aria-label="Email" />
+                                <input id="email" type="email" class="form-control" placeholder="E-mail"
+                                    aria-label="Email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"/>
                                 <p class="error" id="errorCorreo"></p>
                             </div>
                         </div>
                         <div class="row gx-2">
                             <div class="col-md-6 mb-3">
                                 <label for="cantidad" class="form-label">Cantidad</label>
-                                <input id="cantidad" name="cantidad" type="text" class="form-control"
-                                    placeholder="cantidad" aria-label="cantidad" />
-                                <p class="error" id="errorCantidad"></p>
+                                <input id="cantidad" type="number" class="form-control"
+                                    placeholder="cantidad" aria-label="cantidad"/>
 
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="categoria" class="form-label">Categoria</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option value="1">Estudiante</option>
-                                    <option value="2">Trainee</option>
-                                    <option value="3">Junior</option>
-                                    <option value="4">General</option>
+                                <label for="categoria" class="form-label">Categoría</label>
+                                <select class="form-select" id="categoria" name="categoria" aria-label="Default select example">
+                                    <option value="1" id="estudiante">Estudiante</option>
+                                    <option value="2" id="trainee">Trainee</option>
+                                    <option value="3" id="junior">Junior</option>
+                                    <option value="4" id="general">General</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
+
                             <div class="col mb-2">
-                                <input id="email" type="email" class="form-control" placeholder="Total a pagar $"
-                                    aria-label="Email" />
-                                <p class="error" id="errorCorreo"></p>
+                                <p id="resumen" class="form-control">
+                                    Total a pagar $</p> 
                             </div>
+
                         </div>
 
                         <div class="row gx-2">
                             <div class="col-md-6 mb-3">
                                 <div class="d-grid gap-2 ">
-                                    <button class="g-col-3 btn btn-primary" type="button">Button</button>
+                                    <button class="g-col-3 btn btn-success text-white" type="button">Borrar</button>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <div class="d-grid gap-2 ">
-                                    <button class="g-col-3 btn btn-primary" type="button">Button</button>
+                                    <button id="compra" class="g-col-3 btn btn-success text-white" type="submit">Comprar</button>
+
+
+                                    <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>
                             </div>
                         </div>
+
 
                         <!-- <p class="error" id="p1"></p>
 
