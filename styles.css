@@ -84,3 +84,26 @@ max-height: 650px;
         justify-content: center;    
     }
 }
+
+/*HTML Tickets*/
+
+.tarjetas{
+    border: solid 2px #cacaca
+}
+
+.estudiante{
+    border: solid 2px #119099
+}
+
+.trainee{
+    border: solid 2px #6ccdd4
+}
+
+.junior{
+    border: solid 2px #ecd92b
+}
+
+#resumen{
+    background-color: #b1e2e6;
+    color: #056168
+}
