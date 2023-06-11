@@ -7,6 +7,7 @@ let cantidad = document.getElementById("cantidad");
 let categoria = document.getElementById("categoria");
 let resumen = document.getElementById("resumen"); 
 
+
 formulario.addEventListener("submit", (x)=>{
     x.preventDefault();
     console.log("funciona");
@@ -55,3 +56,4 @@ formulario.addEventListener("submit", (x)=>{
         resumen.innerHTML = `El total de tu compra es: ${total}`;
 
 })
+
