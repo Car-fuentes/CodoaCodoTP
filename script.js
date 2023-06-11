@@ -7,16 +7,9 @@ let cantidad = document.getElementById("cantidad");
 let categoria = document.getElementById("categoria");
 let resumen = document.getElementById("resumen"); 
 
-
-formulario.addEventListener("submit", (x)=>{
+formulario.addEventListener("submit", function(x){
     x.preventDefault();
     console.log("funciona");
-
-    console.log(nombre.value);
-    console.log(apellido.value);
-    console.log(email.value);
-    console.log(cantidad.value);
-    console.log(categoria.value);
 
     let ticket ={
         precio: 200
