@@ -20,16 +20,10 @@ formulario.addEventListener("submit", function(x){
     }
 
     let tktEstudiante = descuento.call(ticket, 20)
-    console.log(tktEstudiante)
-
     let tktGeneral = descuento.call(ticket, 100)
-    console.log(tktGeneral)
-
     let tktTrainee = descuento.call(ticket, 50)
-    console.log(tktTrainee)
-
     let tktJunior = descuento.call(ticket, 85)
-    console.log(tktJunior)
+    
 
     switch (categoria.value){
         case "estudiante":
