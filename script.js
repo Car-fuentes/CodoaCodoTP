@@ -40,7 +40,14 @@ formulario.addEventListener("submit", function(x){
                 break;
     }
     
-        resumen.innerHTML = `El total de tu compra es: ${total}`;
+        resumen.innerHTML = `El total de tu compra es: $ ${total}`;
 
 })
+
+function resetear(){
+    console.log("a limpiar todo");
+    formulario.reset();
+    resumen.innerHTML = "Total a pagar $";
+    return false;
+}
 
